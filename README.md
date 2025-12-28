@@ -14,3 +14,7 @@ All rights and licenses remain with the respective owners.
 
 ## Disclaimer
 This repository is for academic and educational purposes only.
+
+## Contribution
+The implementation and experiments in this repository were carried out
+and maintained by the repository owner as part of a course project.

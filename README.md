@@ -1,4 +1,4 @@
-# Segmentation Conditioned by Depth Estimation  
+# Depth Estimation Conditioned by Segmentation 
 ### Medical Robotics Course Project
 
 ## Overview

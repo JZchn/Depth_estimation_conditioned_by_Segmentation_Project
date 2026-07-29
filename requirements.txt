@@ -1,0 +1,10 @@
+torch
+torchvision
+opencv-python
+numpy
+matplotlib
+pandas
+tqdm
+open3d
+segment-anything
+scipy

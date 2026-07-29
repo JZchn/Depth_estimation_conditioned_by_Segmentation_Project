@@ -1,0 +1,43 @@
+# Model weights (download via download_weights.sh)
+checkpoints/*.pth
+checkpoints/*.pt
+
+# Output artifacts (generated at runtime)
+outputs/
+
+# Medical data (privacy - DO NOT UPLOAD)
+data/
+
+# Third-party dependencies
+Depth-Anything-V2/
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+
+# Build artifacts
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor temp files
+*.swp
+*.swo
+
+# Logs
+*.log

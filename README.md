@@ -1,12 +1,12 @@
 # Reliability-Guided Depth Estimation for Surgical Tool Tracking in Endoscopic Images
 
-A research project on **enhancing monocular depth estimation for endoscopic surgery** by suppressing unreliable image regions (specular reflections, texture-scarce tissue, shading variations) before depth inference. Built on [Depth Anything V2](https://github.com/DepthAnything/Depth-Anything-V2) with SAM-based tool segmentation.
+This project investigates whether segmentation information can be used to improve monocular depth estimation in endoscopic scenes. The proposed framework uses SAM-based surgical tool segmentation to estimate unreliable image regions and applies a reliability-based weighting scheme before depth inference. It is built on [Depth Anything V2](https://github.com/DepthAnything/Depth-Anything-V2).
 
 ---
 
 ## Overview
 
-This project implements a reliability-guided depth estimation pipeline for endoscopic surgical scenes. The approach identifies unreliable regions in endoscopic images via multi-feature analysis (shading, texture, edge, specular), modulates the input accordingly, and compares raw vs. guided depth estimates to quantify improvement. For full methodological and quantitative details, see the accompanying project report.
+This project implements a reliability-guided depth estimation pipeline for endoscopic surgical scenes. The pipeline estimates a pixel-wise reliability map from image appearance cues including shading, texture, edges, and specular highlights. The estimated reliability map is used to modulate the input image before depth inference. Raw and reliability-guided depth predictions are then compared using quantitative metrics.
 
 ---
 

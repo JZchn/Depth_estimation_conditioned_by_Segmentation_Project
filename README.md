@@ -4,19 +4,17 @@ This project investigates whether segmentation information can be used to improv
 
 ---
 
-## Overview
+## ✨ Overview
 
 This project implements a reliability-guided depth estimation pipeline for endoscopic surgical scenes. The pipeline estimates a pixel-wise reliability map from image appearance cues including shading, texture, edges, and specular highlights. The estimated reliability map is used to modulate the input image before depth inference. Raw and reliability-guided depth predictions are then compared using quantitative metrics.
 
 ---
 
-## Getting Started
-
-### Prerequisites
+## 🗂 Prerequisites
 - Python 3.8+
 - CUDA-capable GPU (recommended) or CPU
 
-### Installation
+## 🚀 Installation
 
 ```bash
 # 1. Clone and enter the repository
@@ -33,7 +31,7 @@ pip install -r requirements.txt
 git clone https://github.com/DepthAnything/Depth-Anything-V2.git
 ```
 
-### Running the Code
+## 📁 Running the Code
 
 | Script | Purpose | Command |
 |--------|---------|---------|
@@ -43,7 +41,7 @@ git clone https://github.com/DepthAnything/Depth-Anything-V2.git
 
 ---
 
-## Project Structure
+## 🗂 Project Structure
 
 ```
 ├── run_demo.py               # Demo script (synthetic data)
@@ -65,13 +63,13 @@ git clone https://github.com/DepthAnything/Depth-Anything-V2.git
 
 ---
 
-## Data Privacy Notice
+## 📊 Data Privacy Notice
 
 **This repository does not include any medical images.** The `data/` directory is listed in `.gitignore` and must not be uploaded. The demo script (`run_demo.py`) generates purely synthetic images for illustration. Real endoscopic data required for `run_local_eval.py` must be obtained separately from authorized sources.
 
 ---
 
-## License
+## 📄 License
 
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 

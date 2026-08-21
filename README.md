@@ -21,8 +21,11 @@ This project implements a reliability-guided depth estimation pipeline for endos
 git clone https://github.com/JZchn/Depth_estimation_conditioned_by_Segmentation_Project.git
 cd Depth_estimation_conditioned_by_Segmentation_Project
 
-# 2. Download model weights
+# 2. Download model weights (~750 MB)
+#    Linux / macOS / Git Bash (wget is preferred, falls back to curl):
 bash download_weights.sh
+#    Windows PowerShell:
+powershell -ExecutionPolicy Bypass -File download_weights.ps1
 
 # 3. Install Python dependencies
 pip install -r requirements.txt
@@ -30,6 +33,12 @@ pip install -r requirements.txt
 # 4. Clone Depth Anything V2 (third-party dependency)
 git clone https://github.com/DepthAnything/Depth-Anything-V2.git
 ```
+
+> 💡 **GPU note (Windows)**: `pip install torch` from PyPI now installs a **CPU-only** build. To use a CUDA GPU, install the CUDA build explicitly:
+> ```bash
+> pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126
+> ```
+> The code automatically selects CUDA when available.
 
 ## 📁 Running the Code
 

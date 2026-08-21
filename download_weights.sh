@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# 创建 checkpoints 文件夹（如果不存在）
 mkdir -p checkpoints
 
 # Download helper: prefer wget, fall back to curl (curl is preinstalled on
